@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Madhurai Netralayam</h1>
+        <h2><strong>Sign In </strong></h2>
+
+        <form action="/login" method="post">
+            <div class="inputbox">
+                <span><strong>Email: </strong></span>
+                <input type="email" name="email" required>
+            </div>
+            <div class="inputbox">
+                <span><strong>Password: </strong></span>
+                <input type="password" name="password" required>
+            </div>
+            <div class="inputbox">
+                <button type="submit">Sign in</button>
+            </div>
+        </form>
+        <div class="inputbox">
+            <a href="/register">Sign Up</a>
+        </div>
+        <a href="/auth/google">Sign in with google</a>
+        <br>
+        <p class="information"> <%= information %> </p>
+    </div>
+</body>
+
+</html>
